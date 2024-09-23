@@ -101,6 +101,11 @@ const Home = () => {
             </ul>
           </div>
       </section>
+      
+      {/* for skills */}
+      <section>
+
+      </section>
 
     </div>
   );
