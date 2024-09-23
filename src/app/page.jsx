@@ -1,3 +1,5 @@
+"use client";
+
 import React from 'react';
 import { Button } from '@/components/ui/button';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -5,12 +7,13 @@ import { faLinkedinIn, faBehance, faMediumM, faFigma } from '@fortawesome/free-b
 import Photo from '@/components/ui/photo';
 import { FiExternalLink  } from 'react-icons/fi';
 import Socials from '@/components/Socials';
+import { about, experience, education, skills } from './aboutme/page'; // Import the Aboutme component
 
 
 const Home = () => {
   return (
-    <section className='h-full'>
-      <div className='container mx-auto h-full'>
+    <div className='h-full'>
+      <section className='container mx-auto h-full'>
         <div className='flex flex-col xl:flex-row items-center justify-between xl:pt-8 xl:pb-24'>
           {/* for text */}
           <div className='text-center xl:text-left order-2 xl:order-none'>
@@ -39,8 +42,67 @@ const Home = () => {
             <Photo />
           </div>
         </div>
-      </div>
-    </section>
+      </section>
+
+      {/* for Aboutme */}
+      <section className='container mx-auto py-24'>        
+        <div className="flex flex-col gap-[30px]">
+          <h2 className="text-4xl font-bold">{about.title}</h2>
+            <p className="max-w-auto text-white/60">{about.description}</p>
+            <ul className="grid grid-cols-1 xl:grid-cols-2 gap-4">
+              {about.info.map((item, index) => (
+                <li key={index} className="flex items-center gap-4">
+                  <span className="text-white/60">{item.fieldName}:</span>
+                  <span className="text-xl">{item.fieldValue}</span>
+                </li>
+              ))}
+            </ul>
+          </div>
+      </section>
+
+      {/* for Experience */}
+      <section className='container mx-auto py-24'>
+      <div className="flex flex-col gap-[30px]">
+          <h2 className="text-4xl font-bold">{experience.title}</h2>
+            <p className="max-w-auto text-white/60">{experience.description}</p>
+            <ul className="grid grid-cols-1 xl:grid-cols-2 gap-4 ">
+              {experience.items.map((item, index) => (
+                <li key={index} className="bg-[#232329] h-[184px] py-6 px-10 rounded-xl flex flex-col justify-center items-center lg:items-start gap-1">
+                  <span className="text-accent">{item.duration}</span>
+                    <h3 className="text-xl max-w-[260px] min-h-[60px] text-center lg:text-left">{item.position}</h3>
+                    <div className="flex items-center gap-3">
+                      {/* for dot (.) */}
+                      <span className="w-[6px] h-[6px] rounded-full bg-accent"></span>
+                        <p className="text-white/60">{item.company}</p>
+                    </div>
+                </li>
+              ))}
+            </ul>
+          </div>
+      </section>
+
+      {/* for Education */}
+      <section className='container mx-auto py-24'>
+      <div className="flex flex-col gap-[30px]">
+          <h2 className="text-4xl font-bold">{education.title}</h2>
+            <p className="max-w-auto text-white/60">{education.description}</p>
+            <ul className="grid grid-cols-1 xl:grid-cols-2 gap-4 ">
+              {education.items.map((item, index) => (
+                <li key={index} className="bg-[#232329] h-[184px] py-6 px-10 rounded-xl flex flex-col justify-center items-center lg:items-start gap-1">
+                  <span className="text-accent">{item.duration}</span>
+                    <h3 className="text-xl max-w-[320px] min-h-[60px] text-center lg:text-left">{item.degree}</h3>
+                    <div className="flex items-center gap-3">
+                      {/* for dot (.) */}
+                      <span className="w-[6px] h-[6px] rounded-full bg-accent"></span>
+                        <p className="text-white/60">{item.Institution}</p>
+                    </div>
+                </li>
+              ))}
+            </ul>
+          </div>
+      </section>
+
+    </div>
   );
 };
 

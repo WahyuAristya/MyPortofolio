@@ -8,7 +8,7 @@ import { SiTailwindcss, SiAdobeillustrator, SiAdobephotoshop, SiAdobelightroom, 
 
 
 //personal info
-const about = {
+export const about = {
     title: "My Profile",
     description: "I am a UI/UX Designer and Frontend Developer based in Bali,Indonesia. I developed a deep interest in UI/UX design, learning not only the technical skills necessary for designing user interfaces but also how to think critically about user experience and usability.",
     info: [
@@ -33,7 +33,7 @@ const about = {
 
 
 //experience
-const experience = {
+export const experience = {
     icon: '/assets/badge.svg',
     title: "My Experience",
     description: "I have been working as a UI/UX Designer and Frontend Developer for 2 years. I have worked with various clients and companies to develop their websites and mobile applications. I have experience in designing user interfaces, creating wireframes, and developing websites using HTML, CSS, and JavaScript.",
@@ -72,7 +72,7 @@ const experience = {
 
 
 //Education
-const education = {
+export const education = {
     icon: '/assets/graduation.svg',
     title: "My Education",
     description: "I have a Bachelor's degree in Information Technology from the Udayana University.",
@@ -86,7 +86,7 @@ const education = {
 };
 
 //Skills
-const skills = {
+export const skills = {
     title: "My Skills",
     description: "I have experience in designing user interfaces, creating wireframes, and developing websites using HTML, CSS, and JavaScript. I am proficient in using design tools such as Figma, Adobe Illustrator, and Adobe Photoshop.",
     skilllist: [
