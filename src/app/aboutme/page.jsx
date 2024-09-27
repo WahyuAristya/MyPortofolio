@@ -33,7 +33,7 @@ export const about = {
 //experience
 export const experience = {
     icon: '/assets/badge.svg',
-    title: "My Experience",
+    title: "Experience",
     description: "I gained valuable experience in UI/UX Design, Graphic Design, and Frontend development during my studies, where I worked on various projects related to designing user interfaces and developing websites. In addition, I completed an internship as a UI/UX Designer, further honing my skills in creating intuitive designs. I also participated in an independent study program focused on digital marketing, which broadened my knowledge in areas such as web marketing, SEO, and user engagement strategies.",
     items: [
         {
@@ -53,7 +53,7 @@ export const experience = {
 //Education
 export const education = {
     icon: '/assets/graduation.svg',
-    title: "My Education",
+    title: "Education",
     description: "I hold a Bachelor's degree in Information Technology from Udayana University, where I gained a strong foundation in software development, web design, and digital economiy. This academic background, combined with hands-on experience, has equipped me with the knowledge and expertise to design user-friendly digital products and develop efficient, responsive websites.",
     items: [
         {
@@ -66,7 +66,7 @@ export const education = {
 
 //Skills
 export const skills = {
-    title: "My Skills",
+    title: "Skills",
     description: "I have strong proficiency in using various tools that effectively support my work in UI/UX Design, Graphic Design, and Frontend development, enabling me to create seamless and visually appealing digital experiences while ensuring functional and responsive implementation.",
     skilllist: [
         {
@@ -154,7 +154,7 @@ const Aboutme = () => {
         {delay: 2.4, duration: 0.4, ease: "easeIn"}
     }}
 
-    className="min-h-80vh flex items-center justify-center py-12 xl:py-0"
+    className="min-h-80vh flex items-center justify-center py-12 xl:py-0 mb-14 mt-14"
     >
         <div className="container mx-auto">
             <Tabs 
