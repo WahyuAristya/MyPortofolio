@@ -23,8 +23,8 @@ const Header = () => {
                 {/* for dekstop navbar & get in touch button */}
                 <div className="hidden xl:flex items-center gap-8">
                     <Nav/>
-                    <Link href="/getintouch">
-                        <Button>Get in Touch</Button>
+                    <Link href="https://wa.me/6281339442244" target="_blank" rel="noopener noreferrer">
+                            <Button>Get in Touch</Button>
                     </Link>
                 </div>
 

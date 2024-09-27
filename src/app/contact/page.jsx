@@ -23,7 +23,7 @@ const info = [
     {
         icon: <FaMapMarkedAlt/>,
         title: "Address",
-        description: "Blahbatuh, Gianyar",
+        description: "Gianyar, Bali, Indonesia",
     },
 ];
 
@@ -59,20 +59,6 @@ const Contact = () => {
                                 <Input type="email" placeholder="Email Address"/>
                                 <Input type="phone" placeholder="Phone Number"/>
                             </div>
-                            {/* select */}
-                            <Select>
-                                <SelectTrigger className= "w-full">
-                                    <SelectValue placeholder="Select a service"/>
-                                </SelectTrigger>
-                                <SelectContent>
-                                    <SelectGroup>
-                                        <SelectLabel>Select a Service</SelectLabel>
-                                        <SelectItem value="est">Web Development</SelectItem>
-                                        <SelectItem value="cst">UI/UX Design</SelectItem>
-                                        <SelectItem value="mst">Logo Design</SelectItem>
-                                    </SelectGroup>
-                                </SelectContent>
-                            </Select>
                             {/* textarea */}
                             <Textarea className="h-[200px]" placeholder="Type Your Message Here"/>
                             {/* button */}

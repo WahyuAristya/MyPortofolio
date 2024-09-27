@@ -1,20 +1,18 @@
 "use client";
 
-import { icon } from "@fortawesome/fontawesome-svg-core";
-import { Description } from "@radix-ui/react-dialog";
 import React from "react";
-import { FaFigma, FaHtml5, FaCss3, FaJs, FaReact } from "react-icons/fa";
-import { SiTailwindcss, SiAdobeillustrator, SiAdobephotoshop, SiAdobelightroom, SiAdobepremierepro } from "react-icons/si";
+import { FaFigma, FaHtml5, FaCss3, FaJs, FaReact, FaGithub, FaLaravel, FaPhp } from "react-icons/fa";
+import { SiTailwindcss, SiAdobeillustrator, SiAdobephotoshop, SiAdobelightroom, SiAdobepremierepro, SiGitlab, SiNextdotjs, SiCanva } from "react-icons/si";
 
 
 //personal info
 export const about = {
     title: "My Profile",
-    description: "I am a UI/UX Designer and Frontend Developer based in Bali,Indonesia. I developed a deep interest in UI/UX design, learning not only the technical skills necessary for designing user interfaces but also how to think critically about user experience and usability.",
+    description: "I am a UI/UX Designer, Graphic Designer and Frontend Developer based in Bali, Indonesia. I have developed a deep passion for UI/UX Design, Graphic Design, and Frontend development, focusing not only on mastering the technical skills needed to create intuitive user interfaces and visually appealing designs, but also on critically understanding user experience and usability. My approach ensures that each design is functional, user-centric, and enhances the overall user interaction.",
     info: [
         {
-            fieldName: "Name",
-            fieldValue: "Wahyu Aristya"
+            fieldName: "Full Name",
+            fieldValue: "I Kadek Wahyu Nanda Aristya"
         },
         {
             fieldName: "Email",
@@ -36,7 +34,7 @@ export const about = {
 export const experience = {
     icon: '/assets/badge.svg',
     title: "My Experience",
-    description: "I have been working as a UI/UX Designer and Frontend Developer for 2 years. I have worked with various clients and companies to develop their websites and mobile applications. I have experience in designing user interfaces, creating wireframes, and developing websites using HTML, CSS, and JavaScript.",
+    description: "I gained valuable experience in UI/UX Design, Graphic Design, and Frontend development during my studies, where I worked on various projects related to designing user interfaces and developing websites. In addition, I completed an internship as a UI/UX Designer, further honing my skills in creating intuitive designs. I also participated in an independent study program focused on digital marketing, which broadened my knowledge in areas such as web marketing, SEO, and user engagement strategies.",
     items: [
         {
             company: "Ganeshcom Studio",
@@ -46,26 +44,7 @@ export const experience = {
         {
             company: "NF Computer",
             position: "Digital Marketing (Independent Study)",
-            duration: "July - September 2024",
-        },
-        {
-            company: "NF Computer",
-            position: "Digital Marketing (Independent Study)",
-            duration: "July - September 2024",
-        },
-        {
-            company: "NF Computer",
-            position: "Digital Marketing (Independent Study)",
-            duration: "July - September 2024",
-        },
-        {
-            company: "NF Computer",
-            position: "Digital Marketing (Independent Study)",
-            duration: "July - September 2024",
-        },        {
-            company: "NF Computer",
-            position: "Digital Marketing (Independent Study)",
-            duration: "July - September 2024",
+            duration: "August - December 2022",
         }
     ]
 };
@@ -75,7 +54,7 @@ export const experience = {
 export const education = {
     icon: '/assets/graduation.svg',
     title: "My Education",
-    description: "I have a Bachelor's degree in Information Technology from the Udayana University.",
+    description: "I hold a Bachelor's degree in Information Technology from Udayana University, where I gained a strong foundation in software development, web design, and digital economiy. This academic background, combined with hands-on experience, has equipped me with the knowledge and expertise to design user-friendly digital products and develop efficient, responsive websites.",
     items: [
         {
             Institution: "Udayana University",
@@ -88,7 +67,7 @@ export const education = {
 //Skills
 export const skills = {
     title: "My Skills",
-    description: "I have experience in designing user interfaces, creating wireframes, and developing websites using HTML, CSS, and JavaScript. I am proficient in using design tools such as Figma, Adobe Illustrator, and Adobe Photoshop.",
+    description: "I have strong proficiency in using various tools that effectively support my work in UI/UX Design, Graphic Design, and Frontend development, enabling me to create seamless and visually appealing digital experiences while ensuring functional and responsive implementation.",
     skilllist: [
         {
             icon : <FaFigma/>,
@@ -115,6 +94,26 @@ export const skills = {
             name: "Tailwind CSS",
         },
         {
+            icon : <FaGithub/>,
+            name: "Github",
+        },
+        {
+            icon : <SiGitlab/>,
+            name: "Gitlab",
+        },
+        {
+            icon : <SiNextdotjs/>,
+            name: "NextJS",
+        },
+        {
+            icon : <FaLaravel/>,
+            name: "Laravel",
+        },
+        {
+            icon : <FaPhp/>,
+            name: "PHP",
+        },
+        {
             icon : <SiAdobeillustrator/>,
             name: "Adobe Illustrator",
         },
@@ -130,6 +129,10 @@ export const skills = {
             icon : <SiAdobepremierepro/>,
             name: "Adobe Premiere Pro",
         },
+        {
+            icon : <SiCanva/>,
+            name: "Canva",
+        },
     ],
 };
 
@@ -138,6 +141,7 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from '@/components/ui/tooltip';
 import {ScrollArea} from '@/components/ui/scroll-area';
 import { delay, easeInOut, motion } from "framer-motion";
+import { icon } from "@fortawesome/fontawesome-svg-core";
 
 
 const Aboutme = () => {
