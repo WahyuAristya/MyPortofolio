@@ -9,7 +9,7 @@ import {
   faMediumM,
   faFigma,
 } from "@fortawesome/free-brands-svg-icons";
-import Photo from "@/components/ui/photo";
+import Photo from "@/components/ui/Photo";
 import { FiExternalLink } from "react-icons/fi";
 import Socials from "@/components/Socials";
 import { about, experience, education, skills } from "./aboutme/page";
