@@ -37,6 +37,11 @@ export const experience = {
     description: "I gained valuable experience in UI/UX Design, Graphic Design, and Frontend development during my studies, where I worked on various projects related to designing user interfaces and developing websites. In addition, I completed an internship as a UI/UX Designer, further honing my skills in creating intuitive designs. I also participated in an independent study program focused on digital marketing, which broadened my knowledge in areas such as web marketing, SEO, and user engagement strategies.",
     items: [
         {
+            company: "Expat. Rosasters",
+            position: "Graphic Designer Internship",
+            duration: "October 2024 - Now",
+        },
+        {
             company: "Ganeshcom Studio",
             position: "UI/UX Designer Internship",
             duration: "July - September 2024",

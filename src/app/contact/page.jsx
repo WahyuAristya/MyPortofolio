@@ -116,13 +116,13 @@ const Contact = () => {
                                 )}
                                 {/* form */}
                                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                                    <Input type="text" name="firstname" placeholder="First Name" value={formData.firstname} onChange={handleChange} />
-                                    <Input type="text" name="lastname" placeholder="Last Name" value={formData.lastname} onChange={handleChange} />
-                                    <Input type="email" name="email" placeholder="Email Address" value={formData.email} onChange={handleChange} />
-                                    <Input type="tel" name="phone" placeholder="Phone Number" value={formData.phone} onChange={handleChange} />
+                                    <Input type="text" name="firstname" placeholder="First Name" value={formData.firstname} onChange={handleChange} required/>
+                                    <Input type="text" name="lastname" placeholder="Last Name" value={formData.lastname} onChange={handleChange} required/>
+                                    <Input type="email" name="email" placeholder="Email Address" value={formData.email} onChange={handleChange} required/>
+                                    <Input type="tel" name="phone" placeholder="Phone Number" value={formData.phone} onChange={handleChange} required/>
                                 </div>
                                 {/* textarea */}
-                                <Textarea className="h-[200px]" name="message" placeholder="Type Your Message Here" value={formData.message} onChange={handleChange} />
+                                <Textarea className="h-[200px]" name="message" placeholder="Type Your Message Here" value={formData.message} onChange={handleChange} required />
                                 {/* button */}
                                 <Button size="md" className="max-w-40" loading={loading}>Submit</Button> {/* Pass loading state */}
                             </form>
