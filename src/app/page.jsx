@@ -45,7 +45,7 @@ const Home = () => {
             />
             {/* <span className='text-xl'>UI/UX Designer</span> */}
             <h1 className="h1 mb-6">
-              Hello I'm <br />{" "}
+              Hello I am <br />{" "}
               <span className="text-accent">Wahyu Aristya</span>
             </h1>
             <p className="max-w-[550px] mb-14 text-white/80">

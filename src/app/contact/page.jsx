@@ -104,7 +104,7 @@ const Contact = () => {
                     <div className="xl:w-[54%] order-2 xl:order-none">
                         {isFormVisible ? (
                             <form className="flex flex-col gap-6 p-10 bg-[#27272c] rounded-xl" onSubmit={handleSubmit}>
-                                <h3 className="text-4xl text-accent">let's Get in Touch</h3>
+                                <h3 className="text-4xl text-accent">lets Get in Touch</h3>
                                 <p className="text-white/60">
                                     I’d love to hear from you! Whether you have questions, feedback, or collaboration inquiries, feel free to reach out.
                                 </p>
