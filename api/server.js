@@ -4,10 +4,16 @@ const cors = require('cors');
 const app = express();
 require('dotenv').config();
 
-app.use(cors());
-app.use(express.json()); // This line ensures the server can parse JSON requests
+// Tambahkan middleware CORS dengan pengaturan origin
+app.use(cors({
+    origin: 'https://wahyuaristya-portofolio.vercel.app', // Ganti dengan URL frontend Anda
+    methods: ['GET', 'POST', 'PUT', 'DELETE'], // Metode yang diizinkan
+    allowedHeaders: ['Content-Type', 'Authorization'], // Header yang diizinkan
+}));
 
-// Logging middleware to help with debugging
+app.use(express.json()); // Ini memastikan server dapat memparse permintaan JSON
+
+// Middleware logging untuk membantu debugging
 app.use((req, res, next) => {
     console.log(`${req.method} request for '${req.url}' with body:`, req.body);
     next();
@@ -40,7 +46,7 @@ app.post('/api/server', async (req, res) => {
     }
 });
 
-// Start server
+// Memulai server
 const PORT = process.env.PORT || 9000;
 app.listen(PORT, () => {
     console.log(`Server running on port ${PORT}`);
