@@ -13,7 +13,7 @@ app.use((req, res, next) => {
     next();
 });
 
-app.post('/api/server', async (req, res) => {
+app.post('https://portofolio-api-eight.vercel.app/', async (req, res) => {
     const { firstname, lastname, email, phone, message } = req.body;
 
     const transporter = nodemailer.createTransport({
