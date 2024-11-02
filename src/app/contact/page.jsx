@@ -51,7 +51,7 @@ const Contact = () => {
         setLoading(true); // Set loading to true when submitting
 
         try {
-            const response = await fetch("https://vercel.com/wahyuaristyas-projects/portofolio-api/91cL63NeEG7iRN1VbKzmDva9Q1BP", {
+            const response = await fetch("https://portofolio-api-eight.vercel.app/", {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json"
