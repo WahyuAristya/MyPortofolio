@@ -6,7 +6,7 @@ require('dotenv').config();
 
 // Tambahkan middleware CORS dengan pengaturan origin
 app.use(cors({
-    origin: 'https://wahyuaristya-portofolio.vercel.app', // Ganti dengan URL frontend Anda
+    origin: 'https://wahyuaristya-portofolio.vercel.app',
     methods: ['GET', 'POST', 'PUT', 'DELETE'], // Metode yang diizinkan
     allowedHeaders: ['Content-Type', 'Authorization'], // Header yang diizinkan
 }));
